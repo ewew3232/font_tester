@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>フォント検証用</title>
+
+<style media="screen">
+
+@font-face {
+font-family: 'cu';
+  src: url('rotted.ttf');
+}
+
+@font-face {
+font-family: 'cu2';
+  src: url('flower.ttf');
+}
+
+@font-face {
+font-family: 'cu3';
+  src: url('sumi.ttf');
+}
+
+@font-face {
+font-family: 'cu4';
+  src: url('machine.ttf');
+}
+
+@font-face {
+font-family: 'cu5';
+  src: url('blood.ttf');
+}
+
+@font-face {
+font-family: 'cu6';
+  src: url('grass.ttf');
+}
+
+@font-face {
+font-family: 'cu7';
+  src: url('sakura.ttf');
+}
+
+@font-face {
+font-family: 'cu8';
+  src: url('water.ttf');
+}
+
+@font-face {
+font-family: 'cu9';
+  src: url('jem.ttf');
+}
+
+@font-face {
+font-family: 'cu10';
+  src: url('star.ttf');
+}
+
+
+body{
+	font-size: 1em;
+	display: flex;
+	background: #000;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1%
+	
+}
+
+.display {
+	height: 100%;
+	width: 100%;
+	font-size: 5em;
+	text-align: center;
+	table-layout: fixed;
+    word-wrap: break-word;
+    border: solid 1px #FFFFFF;
+    background-color: #CFCFCF;
+	
+}
+
+.cen {
+	text-align: center;
+	
+}
+
+.back {
+	background-color: #FFFFFF;
+
+}
+
+.input1{
+	border: 0px
+}
+/* .input1::placeholder {
+text-align: center;
+} */
+.out1{
+	font-family: "cu";
+	margin:3%;
+}
+.out2{
+	font-family: "cu2";
+	margin:3%;
+}
+.out3{
+	font-family: "cu3";
+	margin:3%;
+}
+.out4{
+	font-family: "cu4";
+	margin:3%;
+}
+.out5{
+	font-family: "cu5";
+	margin:3%;
+}
+.out6{
+	font-family: "cu6";
+	margin:3%;
+}
+.out7{
+	font-family: "cu7";
+	margin:3%;
+}
+.out8{
+	font-family: "cu8";
+	margin:3%;
+}
+.out9{
+	font-family: "cu9";
+	margin:3%;
+}
+.out10{
+	font-family: "cu10";
+	margin:3%;
+}
+
+</style>
+
+<script type="text/javascript">
+function changeBoxColor( newColor ) {
+    document.getElementById('back').style.backgroundColor = newColor;
+}
+</script>
+
+</head>
+
+	<body>
+
+<div  class="cen">
+
+<font color="white">
+!#%&()+,-.0123456789?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz、。，．：；？！¨〇ー―‐／＼～∥｜…‘’“”（）〔〕［］｛｝〈〉《》「」『』【】＋－±×÷＝≠＜＞＆＊＠☆★○●◎◇◆□■△▲▽▼※→←↑↓〓ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶ─
+</font>
+
+<br>
+
+<input type="button" value="背景:灰" onclick="changeBoxColor('#CFCFCF');">
+<input type="button" value="背景:白" onclick="changeBoxColor('#FFFFFF');">
+<input type="button" value="背景:黒" onclick="changeBoxColor('#000000');">
+
+<br>
+
+<form name="form1" class="form1">
+<input type="text" id="input1" value="" placeholder="enter" class="input1">
+
+</div>
+
+<div class="display" id="back">
+
+<p id="out1" class="out1">Aaあア1!?□■</p>
+<p id="out2" class="out2">Aaあア1!?□■</p>
+<p id="out3" class="out3">Aaあア1!?□■</p> 
+<p id="out4" class="out4">Aaあア1!?□■</p> 
+<p id="out5" class="out5">Aaあア1!?□■</p> 
+<p id="out6" class="out6">Aaあア1!?□■</p> 
+<p id="out7" class="out7">Aaあア1!?□■</p> 
+<p id="out8" class="out8">Aaあア1!?□■</p> 
+<p id="out9" class="out9">Aaあア1!?□■</p> 
+<p id="out10" class="out10">Aaあア1!?□■</p> 
+
+</div>
+
+
+<!-- </form>
+<div>
+	<textarea class="required maxlength" data-maxlength="100" name="inquiry" id="inquiry" rows="5" cols="50"></textarea>
+  </div>
+  <button name="send">送信</button>
+</form> -->
+
+
+<script>
+
+const i = document.forms.form1.input1;
+i.addEventListener('input',()=>{
+	var str = i.value
+
+	let display1  = document.getElementById('out1');
+	let display2  = document.getElementById('out2');
+	let display3  = document.getElementById('out3');
+	let display4  = document.getElementById('out4');
+	let display5  = document.getElementById('out5');
+	let display6  = document.getElementById('out6');
+	let display7  = document.getElementById('out7');
+	let display8  = document.getElementById('out8');
+	let display9  = document.getElementById('out9');
+	let display10  = document.getElementById('out10');
+
+	display1.textContent = str
+	display2.textContent = str
+	display3.textContent = str
+	display4.textContent = str
+	display5.textContent = str
+	display6.textContent = str
+	display7.textContent = str
+	display8.textContent = str
+	display9.textContent = str
+	display10.textContent = str
+	
+});
+
+</script>
+	</body>
+</html>
